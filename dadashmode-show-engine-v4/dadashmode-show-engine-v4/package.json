@@ -1,0 +1,13 @@
+{
+  "name": "dadashmode-show-engine",
+  "version": "4.0.0",
+  "description": "داداش‌مود · موتور نمایش ۴ — موتور گرافیک و اجرای مسابقهٔ یوتیوب، بدون وابستگی",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "voices": "node tools/build-voicepack.mjs",
+    "check": "node --check server.js && node --check tools/serve.mjs && node --check tools/edge-tts.mjs && node --check tools/build-voicepack.mjs"
+  },
+  "engines": { "node": ">=18" }
+}
