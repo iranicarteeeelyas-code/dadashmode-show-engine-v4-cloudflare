@@ -1,0 +1,7 @@
+{
+  "name": "dadashmode-show-engine-v4",
+  "description": "داداش‌مود · موتور نمایش ۴ — موتور گرافیک و اجرای مسابقهٔ یوتیوب، بدون وابستگی",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

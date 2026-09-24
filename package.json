@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
+    "build": "node --check server.js && node --check tools/serve.mjs && node --check tools/edge-tts.mjs && node --check tools/build-voicepack.mjs",
     "voices": "node tools/build-voicepack.mjs",
     "check": "node --check server.js && node --check tools/serve.mjs && node --check tools/edge-tts.mjs && node --check tools/build-voicepack.mjs"
   },

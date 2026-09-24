@@ -9,7 +9,7 @@
    Usage: node tools/serve.mjs [port]   then open http://localhost:8080  (phones on same Wi-Fi: http://<computer-ip>:8080) */
 import http from 'node:http';import fs from 'node:fs';import fsp from 'node:fs/promises';import path from 'node:path';import os from 'node:os';import {fileURLToPath} from 'node:url';
 import {edgeSynth,EDGE_EMO} from './edge-tts.mjs';
-const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');const PORT=+process.argv[2]||+process.env.PORT||8080;const HOST=process.env.HOST||'0.0.0.0';
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');const PORT=+process.argv[2]||+process.env.PORT||3000;const HOST=process.env.HOST||'0.0.0.0';
 const MIME={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript','.css':'text/css','.json':'application/json','.webmanifest':'application/manifest+json','.png':'image/png','.svg':'image/svg+xml','.ttf':'font/ttf','.wav':'audio/wav','.mp3':'audio/mpeg','.ogg':'audio/ogg','.webm':'audio/webm','.md':'text/markdown; charset=utf-8','.pdf':'application/pdf'};
 const VOICES=path.join(ROOT,'voices');
 
